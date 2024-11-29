@@ -19,7 +19,7 @@ function Categories() {
         />
       }
       {query.length === 0 ? (
-        <h3>Search for categories or video games...</h3>
+        <h3>Categories or Games?</h3>
       ) : null}
       <div className="d-flex flex-row flex-wrap gap-3">
         {data?.data.map((item) => {

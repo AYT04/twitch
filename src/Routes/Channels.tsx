@@ -8,14 +8,14 @@ function Channels() {
     <div>
       <h2 className="mb-4">Channels</h2>
       <SearchInput
-        placeholder="Search for live channel to watch on twitch"
+        placeholder="Search Channels.."
         updateQuery={(receivedQuery) => {
           setQuery(receivedQuery);
         }}
         navigateToQuery={true}
       />
 
-      {query.length === 0 ? <h3>Search for Channels on twitch</h3> : null}
+      {query.length === 0 ? <h3>Creator Search</h3> : null}
     </div>
   );
 }
