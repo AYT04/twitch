@@ -1,21 +1,20 @@
 import Categories from "./Routes/Categories";
 import { Route, Routes } from "react-router-dom";
-import Clips from "./Routes/Clips";
-import Clip from "./Routes/Clip";
 import Nav from "./Components/Nav";
 import Channels from "./Routes/Channels";
 import Channel from "./Routes/Channel";
+import Home from "./Routes/Home";
+import YouTube from "./Routes/YouTube";
 
 function App() {
-  document.title = "Twitch Search";
+  document.title = "AYTWiki";
   return (
     <div>
       <Nav />
       <div className="container">
         <Routes>
-          <Route path="/" element={<Categories />} />
-          <Route path="/clips/:id" element={<Clips />} />
-          <Route path="/clips/play/:id" element={<Clip />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/youtube" element={<YouTube />} />
           <Route path="/channels" element={<Channels />} />
           <Route path="/channels/:id" element={<Channel />} />
         </Routes>
